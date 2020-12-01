@@ -14,7 +14,7 @@
     <section class="stat" id="2">
       <div class="hom"><h1>300,000,000</h1></div>
       <div class="som"><h1>300 m.</h1></div>
-      <div><h2>Number of homes affected by coastal flooding in the next 30 years</h2></div>
+      <div><h2>Est. number of homes that will be affected by coastal flooding in the next 30 years</h2></div>
     </section>
     <section class="stat" id="3">
       <div class="hom"><h1>1,474,213</h1></div>
@@ -93,6 +93,11 @@
       <div class="som"><h1>3.9k</h1></div>
       <h2>Number of hate crimes motivated by bias against race in 2019</h2>
     </section>
+    <section class="stat" id="20">
+      <div class="hom"><h1>26,000,000</h1></div>
+      <div class="som"><h1>26 m.</h1></div>
+      <h2>Est. number of people who participated in antiracist demonstrations during the summer</h2>
+    </section>
     <button onclick="random()" class="generate" id="random">Generate statistic</button>
   <script>
   /*
@@ -109,7 +114,7 @@ function random(){
     for( i=0; i < items.length; i++ ){
         items[i].style.display = "none";
     };
-    var random_id = Math.floor((Math.random()*19)+1);
+    var random_id = Math.floor((Math.random()*20)+1);
     document.getElementById(random_id).style.display = "block";
 
 };
