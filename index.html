@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Statistics for 2020</title>
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/favicon.png" type="image/png" />
+  </head>
+  <body>
+    <section class="stat" id="1">
+      <div class="hom"><h1>30,700,000</h1></div>
+      <div class="som"><h1>30.7 m.</h1></div>
+      <div><h2>Number of people in the United States without health insurance in 2019</h2></div>
+    </section>
+    <section class="stat" id="2">
+      <div class="hom"><h1>300,000,000</h1></div>
+      <div class="som"><h1>300 m.</h1></div>
+      <div><h2>Number of homes affected by coastal flooding in the next 30 years</h2></div>
+    </section>
+    <section class="stat" id="3">
+      <div class="hom"><h1>1,474,213</h1></div>
+      <div class="som"><h1>1.5 m.</h1></div>
+      <div><h2>Number of people that have died from the COVID-19 pandemic</h2></div>
+    </section>
+    <section class="stat" id="4">
+      <h1>99%</h1>
+      <h2>Percentage of police killings that resulted in no charges against police</h2>
+    </section>
+    <section class="stat" id="5">
+      <h1>8</h1>
+      <h2>Number of the 100 largest police departments that kill Black men at higher rates than the US murder rate</h2>
+    </section>
+    <section class="stat" id="6">
+      <div class="hom"><h1>4,359,517</h1></div>
+      <div class="som"><h1>4.4 m.</h1></div>
+      <h2>Number of acres of land burned from wildfires in California in 2020, the largest wildfire season in modern history</h2>
+    </section>
+    <section class="stat" id="7">
+      <h1>14.7%</h1>
+      <h2>Unemployment rate at its 2020 peak, in April</h2>
+    </section>
+    <section class="stat" id="8">
+      <div class="hom"><h1>68,000</h1></div>
+      <div class="som"><h1>68k</h1></div>
+      <h2>Number of lives saved under Medicare for All implementation, compared with the status quo</h2>
+    </section>
+    <section class="stat" id="9">
+      <h1>$7.25</h1>
+      <h2>Federal minimum wage requirement</h2>
+    </section>
+    <section class="stat" id="10">
+      <div class="hom"><h1>$11.97 billion</h1></div>
+      <div class="som"><h1>$12 b.</h1></div>
+      <h2>Amount of money made by Facebook on advertising sales in the first quarter of 2018 alone</h2>
+    </section>
+    <section class="stat" id="11">
+      <div><h1>30</h1></div>
+      <h2>Number of named tropical storms during the 2020 Atlantic hurricane season</h2>
+    </section>
+    <section class="stat" id="12">
+      <div><h1>$0</h1></div>
+      <h2>The amount of money spent by the government on economic stimulus since April</h2>
+    </section>
+    <section class="stat" id="13">
+      <div class="hom"><h1>80,000,000</h1></div>
+      <div class="som"><h1>80 m.</h1></div>
+      <h2>The number of votes cast for President-elect Biden in the 2020 US presidential election</h2>
+    </section>
+    <section class="stat" id="14">
+      <div><h1>3</h1></div>
+      <h2>The number of justices on the Supreme Court appointed by President Trump</h2>
+    </section>
+    <section class="stat" id="15">
+      <div class="hom"><h1>200,000,000</h1></div>
+      <div class="som"><h1>200 m.</h1></div>
+      <h2>Number of daily Zoom users in March 2020</h2>
+    </section>
+    <section class="stat" id="16">
+      <div class="hom"><h1>$41 billion</h1></div>
+      <div class="som"><h1>$41 b.</h1></div>
+      <h2>Amount of money in damages caused by the 2020 Atlantic hurricane season</h2>
+    </section>
+    <section class="stat" id="17">
+      <div class="hom"><h1>$170,000,000</h1></div>
+      <div class="som"><h1>$170 m.</h1></div>
+      <h2>Amount of money raised by President Trump after his election loss</h2>
+    </section>
+    <section class="stat" id="18">
+      <div><h1>20%</h1></div>
+      <h2>Increase in number of anti-trans hate crimes from 2018 to 2019</h2>
+    </section>
+    <section class="stat" id="19">
+      <div class="hom"><h1>3,963</h1></div>
+      <div class="som"><h1>3.9k</h1></div>
+      <h2>Number of hate crimes motivated by bias against race in 2019</h2>
+    </section>
+    <button onclick="random()" class="generate" id="random">Generate statistic</button>
+  <script>
+  /*
+    function random() {
+    return Math.floor((Math.random() * 9) + 1);
+}
+    document.getElementById("random").onclick = function () {
+    document.getElementById(random()).style.display = "block";
+}
+*/
+function random(){
+    var items = document.getElementsByClassName("stat");
+
+    for( i=0; i < items.length; i++ ){
+        items[i].style.display = "none";
+    };
+    var random_id = Math.floor((Math.random()*19)+1);
+    document.getElementById(random_id).style.display = "block";
+
+};
+random()
+  </script>
+  </body>
+</html>
