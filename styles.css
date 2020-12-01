@@ -22,6 +22,24 @@ body:hover {
   cursor: default;
 }
 
+body { 
+  animation: fadeInAnimation ease 5s; 
+  animation-iteration-count: 1; 
+  animation-fill-mode: forwards; 
+} 
+
+@keyframes fadeInAnimation { 
+  0% { 
+    opacity: 0; 
+  }
+  20% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 ::selection {
   background-color: transparent;
 }
@@ -57,6 +75,7 @@ body:hover {
 .generate:focus {
   outline-color: transparent;
 }
+
 
 
 .som {
