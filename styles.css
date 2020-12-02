@@ -121,4 +121,10 @@ body {
   .hom {
     display: none;
   }
+  .generate {
+    font-size: 50px;
+  }
+  .stat h2 {
+    font-size: 120px;
+  }
 }
