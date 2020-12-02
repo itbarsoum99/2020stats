@@ -8,18 +8,18 @@
   <body>
     <section class="stat" id="1">
       <div class="hom"><h1>30,700,000</h1></div>
-      <div class="som"><h1>30.7 m.</h1></div>
+      <div class="som"><h1>30.7m.</h1></div>
       <div><h2>Number of people in the United States without health insurance in 2019</h2></div>
     </section>
     <section class="stat" id="2">
       <div class="hom"><h1>300,000,000</h1></div>
-      <div class="som"><h1>300 m.</h1></div>
+      <div class="som"><h1>300m.</h1></div>
       <div><h2>Est. number of homes that will be affected by coastal flooding in the next 30 years</h2></div>
     </section>
     <section class="stat" id="3">
       <div class="hom"><h1>1,474,213</h1></div>
-      <div class="som"><h1>1.5 m.</h1></div>
-      <div><h2>Number of people that have died from the COVID-19 pandemic</h2></div>
+      <div class="som"><h1>1.5m.</h1></div>
+      <div><h2>Number of people that have died from the COVID-19 pandemic worldwide</h2></div>
     </section>
     <section class="stat" id="4">
       <h1>99%</h1>
@@ -31,7 +31,7 @@
     </section>
     <section class="stat" id="6">
       <div class="hom"><h1>4,359,517</h1></div>
-      <div class="som"><h1>4.4 m.</h1></div>
+      <div class="som"><h1>4.4m.</h1></div>
       <h2>Number of acres of land burned from wildfires in California in 2020, the largest wildfire season in modern history</h2>
     </section>
     <section class="stat" id="7">
@@ -62,7 +62,7 @@
     </section>
     <section class="stat" id="13">
       <div class="hom"><h1>80,000,000</h1></div>
-      <div class="som"><h1>80 m.</h1></div>
+      <div class="som"><h1>80m.</h1></div>
       <h2>The number of votes cast for President-elect Biden in the 2020 US presidential election</h2>
     </section>
     <section class="stat" id="14">
@@ -71,7 +71,7 @@
     </section>
     <section class="stat" id="15">
       <div class="hom"><h1>200,000,000</h1></div>
-      <div class="som"><h1>200 m.</h1></div>
+      <div class="som"><h1>200m.</h1></div>
       <h2>Number of daily Zoom users in March 2020</h2>
     </section>
     <section class="stat" id="16">
@@ -81,7 +81,7 @@
     </section>
     <section class="stat" id="17">
       <div class="hom"><h1>$170,000,000</h1></div>
-      <div class="som"><h1>$170 m.</h1></div>
+      <div class="som"><h1>$170m.</h1></div>
       <h2>Amount of money raised by President Trump after his election loss</h2>
     </section>
     <section class="stat" id="18">
@@ -95,26 +95,47 @@
     </section>
     <section class="stat" id="20">
       <div class="hom"><h1>26,000,000</h1></div>
-      <div class="som"><h1>26 m.</h1></div>
+      <div class="som"><h1>26m.</h1></div>
       <h2>Est. number of people who participated in antiracist demonstrations during the summer</h2>
+    </section>
+    <section class="stat" id="21">
+      <div class="hom"><h1>328,239,523</h1></div>
+      <div class="som"><h1>328.2m.</h1></div>
+      <h2>Estimated 2019 population of the United States of America</h2>
+    </section>
+    <section class="stat" id="22">
+      <div class="hom"><h1>74,000,000</h1></div>
+      <div class="som"><h1>74m.</h1></div>
+      <h2>The number of votes cast for President Trump in the 2020 US presidential election</h2>
+    </section>
+    <section class="stat" id="23">
+      <div class="hom"><h1>$34,482</h1></div>
+      <div class="som"><h1>$34.5k</h1></div>
+      <h2>The amount of money President Trump paid for each vote netted by President-elect Biden in the Wisconsin recount</h2>
+    </section>
+    <section class="stat" id="24">
+      <div class="hom"><h1>10,000,000</h1></div>
+      <div class="som"><h1>10m.</h1></div>
+      <h2>Number of people targeted by voter suppression robocalls on Election Day in the US</h2>
+    </section>
+    <section class="stat" id="25">
+      <div class="hom"><h1>63,650,135</h1></div>
+      <div class="som"><h1>63.6m</h1></div>
+      <h2>Number of people that have contracted COVID-19 worldwide</h2>
+    </section>
+    <section class="stat" id="26">
+      <div><h1>306</h1></div>
+      <h2>Number of electoral votes garnered by President Trump in 2016 and President-elect Biden in 2020</h2>
     </section>
     <button onclick="random()" class="generate" id="random">Generate statistic</button>
   <script>
-  /*
-    function random() {
-    return Math.floor((Math.random() * 9) + 1);
-}
-    document.getElementById("random").onclick = function () {
-    document.getElementById(random()).style.display = "block";
-}
-*/
 function random(){
     var items = document.getElementsByClassName("stat");
 
     for( i=0; i < items.length; i++ ){
         items[i].style.display = "none";
     };
-    var random_id = Math.floor((Math.random()*20)+1);
+    var random_id = Math.floor((Math.random()*26)+1);
     document.getElementById(random_id).style.display = "block";
 
 };
